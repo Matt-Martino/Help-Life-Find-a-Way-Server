@@ -1,0 +1,45 @@
+[
+    {
+        "model": "helplifeapi.PlantCareTip",
+        "pk": 1,
+        "fields": {
+            "care_tip_id": 1,
+            "plant_id": 1
+        }
+    },{
+        "model": "helplifeapi.PlantCareTip",
+        "pk": 2,
+        "fields": {
+            "care_tip_id": 2,
+            "plant_id": 2
+        }
+    },{
+        "model": "helplifeapi.PlantCareTip",
+        "pk": 3,
+        "fields": {
+            "care_tip_id": 3,
+            "plant_id": 3
+        }
+    },{
+        "model": "helplifeapi.PlantCareTip",
+        "pk": 4,
+        "fields": {
+            "care_tip_id": 4,
+            "plant_id": 4
+        }
+    },{
+        "model": "helplifeapi.PlantCareTip",
+        "pk": 5,
+        "fields": {
+            "care_tip_id": 5,
+            "plant_id": 3
+        }
+    },{
+        "model": "helplifeapi.PlantCareTip",
+        "pk": 6,
+        "fields": {
+            "care_tip_id": 6,
+            "plant_id": 1
+        }
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "model": "helplifeapi.PlantType",
+        "pk": 1,
+        "fields": {
+            "plant_type": "Tree"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 2,
+        "fields": {
+            "plant_type": "Shrub"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 3,
+        "fields": {
+            "plant_type": "Flowering"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 4,
+        "fields": {
+            "plant_type": "Fruiting"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 5,
+        "fields": {
+            "plant_type": "Tropical"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 6,
+        "fields": {
+            "plant_type": "Annual"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 7,
+        "fields": {
+            "plant_type": "Perennial "
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 8,
+        "fields": {
+            "plant_type": "Edible"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 9,
+        "fields": {
+            "plant_type": "Toxic"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 10,
+        "fields": {
+            "plant_type": "Arid"
+        }
+    },{
+        "model": "helplifeapi.PlantType",
+        "pk": 11,
+        "fields": {
+            "plant_type": "Succulent"
+        }
+    }
+]
