@@ -1,9 +1,0 @@
-[
-    {
-        "model": "helplifeapi.customer",
-        "pk": 1,
-        "fields": {
-            "plant_type": 1
-        }
-    }
-]

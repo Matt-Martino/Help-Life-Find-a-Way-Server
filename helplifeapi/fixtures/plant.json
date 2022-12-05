@@ -1,0 +1,113 @@
+[
+    {
+        "model": "helplifeapi.plant",
+        "pk": 1,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 2,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 3,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 4,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 5,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 6,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 7,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 8,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 9,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 10,
+        "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C. dasyii",
+            "plant_image": "daisy.img"
+        }
+    }
+]
