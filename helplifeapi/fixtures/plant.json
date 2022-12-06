@@ -17,7 +17,7 @@
         "model": "helplifeapi.plant",
         "pk": 2,
         "fields": {
-            "user_id": 1,
+            "user_id": 2,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
@@ -30,7 +30,7 @@
         "model": "helplifeapi.plant",
         "pk": 3,
         "fields": {
-            "user_id": 1,
+            "user_id": 3,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
@@ -43,7 +43,7 @@
         "model": "helplifeapi.plant",
         "pk": 4,
         "fields": {
-            "user_id": 1,
+            "user_id": 4,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",

@@ -55,4 +55,4 @@ class HelpLifeUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = HelpLifeUser
         fields = ('id', 'user', "full_name", 'bio', 'profile_image_url', "tokenNumber", )
-        
+        depth = 1

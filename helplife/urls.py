@@ -27,7 +27,7 @@ router.register(r'plants', PlantView, 'plant')
 router.register(r'plantCareTips', PlantCareTipView, 'plantCareTip')
 router.register(r'plantTypes', PlantTypeView, 'plantType')
 router.register(r'userPlantPlantTypes', UserPlantPlantTypeView, 'userPlantPlantType')
-router.register(r'users', HelpLifeUserView, 'user')
+router.register(r'helplifeusers', HelpLifeUserView, 'helplifeuser')
 
 urlpatterns = [
     path('register', register_user),
