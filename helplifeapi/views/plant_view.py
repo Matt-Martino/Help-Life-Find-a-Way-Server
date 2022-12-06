@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import serializers, status
 from helplifeapi.models import Plant, HelpLifeUser
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
 
 class PlantView(ViewSet):
     """plant view"""
@@ -17,10 +18,16 @@ class PlantView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list(self, request):
-        user = User.objects.all()
 
-        plants = Plant.objects.all()
-        serializer = PlantSerializer(plants, many=True)
+        filtered_plants = Plant.objects.all()
+        
+        if "user" in request.query_params:
+            query_value = request.query_params["user"]
+            token = Token.objects.get(key=query_value)
+            user_id = token.user_id
+            filtered_plants = filtered_plants.filter(user=user_id)
+
+        serializer = PlantSerializer(filtered_plants, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
