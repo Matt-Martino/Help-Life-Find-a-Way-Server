@@ -19,6 +19,7 @@ from django.conf.urls import include
 from rest_framework import routers
 from helplifeapi.views import register_user, login_user
 from helplifeapi.views import CareTipView, PlantView, PlantCareTipView, PlantTypeView, UserPlantPlantTypeView
+from helplifeapi.views import HelpLifeUserView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'careTips', CareTipView, 'careTip')
@@ -26,6 +27,7 @@ router.register(r'plants', PlantView, 'plant')
 router.register(r'plantCareTips', PlantCareTipView, 'plantCareTip')
 router.register(r'plantTypes', PlantTypeView, 'plantType')
 router.register(r'userPlantPlantTypes', UserPlantPlantTypeView, 'userPlantPlantType')
+router.register(r'users', HelpLifeUserView, 'user')
 
 urlpatterns = [
     path('register', register_user),

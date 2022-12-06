@@ -6,7 +6,7 @@ from helplifeapi.models import Plant, HelpLifeUser
 from django.contrib.auth.models import User
 
 class PlantView(ViewSet):
-    """HelpLife Care Tip view"""
+    """plant view"""
 
     def retrieve(self, request, pk):
         try: 
