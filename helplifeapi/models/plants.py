@@ -9,6 +9,8 @@ class Plant(models.Model):
     plant_age = models.CharField(max_length=50)
     plant_name = models.CharField(max_length=50)
     plant_image = models.CharField(max_length=50)
+    care_tips = models.ManyToManyField("CareTip", through='PlantCareTip', related_name='SpecificPlantCareTip')
+    plant_types = models.ManyToManyField("PlantType", through='UserPlantPlantType', related_name='SpecificPlantType')
     
 
   

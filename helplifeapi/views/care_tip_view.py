@@ -5,7 +5,7 @@ from rest_framework import serializers, status
 from helplifeapi.models import CareTip
 
 class CareTipView(ViewSet):
-    """HelpLife Care Tip view"""
+    """Care Tip view"""
 
     def retrieve(self, request, pk):
         try: 

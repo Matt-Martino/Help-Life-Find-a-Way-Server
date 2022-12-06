@@ -8,5 +8,3 @@ python3 manage.py loaddata tokens
 python3 manage.py loaddata plant_type
 python3 manage.py loaddata care_tip
 python3 manage.py loaddata plant
-python3 manage.py loaddata plant_care_tip
-python3 manage.py loaddata user_plant_plant_type
