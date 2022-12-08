@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from helplifeapi.models import PlantCareTip
+from helplifeapi.models import PlantCareTip, Plant, CareTip
 
 class PlantCareTipView(ViewSet):
     """plant care tip view"""
@@ -22,11 +22,14 @@ class PlantCareTipView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
+        care_tip_id = CareTip.objects.get(pk=request.data["care_tip"])
+        plant_id = Plant.objects.get(pk=request.data["plant"])
 
         plant_care_tip = PlantCareTip.objects.create(
-            care_tip = request.data["care_tip"],
-            plant = request.data["plant"]
+            care_tip = care_tip_id,
+            plant = plant_id
             )
+            
         serializer = PlantCareTipSerializer(plant_care_tip)
         return Response(serializer.data, status = status.HTTP_201_CREATED)
 

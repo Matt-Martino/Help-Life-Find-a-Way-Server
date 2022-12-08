@@ -33,7 +33,6 @@ class HelpLifeUserView(ViewSet):
         help_life_user.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
-
     def destroy(self, request, pk):
         help_life_user = HelpLifeUser.objects.get(pk=pk)
         help_life_user.delete()
