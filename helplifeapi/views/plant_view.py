@@ -32,10 +32,10 @@ class PlantView(ViewSet):
 
     def create(self, request):
 
-        help_life_user = HelpLifeUser.objects.get(user=request.auth.user)
+        user = HelpLifeUser.objects.get(user=request.auth.user)
 
         plant = Plant.objects.create(
-            user = help_life_user,
+            user = user,
             available = request.data["available"],
             new_plant_care = request.data["new_plant_care"],
             plant_age = request.data["plant_age"],

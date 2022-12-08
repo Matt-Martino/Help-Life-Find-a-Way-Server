@@ -22,10 +22,15 @@ class UserPlantPlantTypeView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
+        Plant_type_id = PlantType.objects.get(pk=request.data["plant_type"])
+        plant_id = Plant.objects.get(pk=request.data["plant"])
+
+
         user_plant_plant_type = UserPlantPlantType.objects.create(
-            plant_type = request.data["plant_type"],
-            plant = request.data["plant"]
+            plant_type = Plant_type_id,
+            plant = plant_id
             )
+
         serializer = UserPlantPlantTypeSerializer(user_plant_plant_type)
         return Response(serializer.data, status = status.HTTP_201_CREATED)
 

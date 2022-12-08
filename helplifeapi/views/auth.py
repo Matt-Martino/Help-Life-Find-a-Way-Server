@@ -4,7 +4,6 @@ from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-
 from helplifeapi.models import HelpLifeUser
 
 @api_view(['POST'])
@@ -54,14 +53,14 @@ def register_user(request):
         email=request.data['email']
     )
 
-    # Now save the extra info in the helplifeapi_rareUser table
-    HelpLifeUser = HelpLifeUser.objects.create(
+    # Now save the extra info in the helplifeapi_HelpLifeUser table
+    HelpUser = HelpLifeUser.objects.create(
         bio=request.data['bio'],
         user=new_user
     )
 
     # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=HelpLifeUser.user)
+    token = Token.objects.create(user=HelpUser.user)
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)
