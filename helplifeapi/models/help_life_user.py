@@ -15,8 +15,12 @@ class HelpLifeUser(models.Model):
     @property
     def username(self):
         return f'{self.user.username}'
+
     @property
     def tokenNumber(self):
         token = Token.objects.get(user_id=self.user.id)
-        return f'{token}'
+        return f'{token.key}'
 
+    @property
+    def email(self):
+        return f'{self.user.email}'

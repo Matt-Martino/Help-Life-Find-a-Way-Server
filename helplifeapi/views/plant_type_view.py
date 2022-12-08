@@ -11,7 +11,7 @@ class PlantTypeView(ViewSet):
         try: 
             plant_type = PlantType.objects.get(pk=pk)
         except PlantType.DoesNotExist:
-            return Response({"message": "Care Tip does not exist"}, status = status.HTTP_404_NOT_FOUND)
+            return Response({"message": "Plant Type does not exist"}, status = status.HTTP_404_NOT_FOUND)
         serializer = PlantTypeSerializer(plant_type)
         return Response(serializer.data, status=status.HTTP_200_OK)
 

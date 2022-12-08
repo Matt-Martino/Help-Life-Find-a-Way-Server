@@ -13,7 +13,7 @@ class PlantView(ViewSet):
         try: 
             plant = Plant.objects.get(pk=pk)
         except Plant.DoesNotExist:
-            return Response({"message": "Care Tip does not exist"}, status = status.HTTP_404_NOT_FOUND)
+            return Response({"message": "Plant does not exist"}, status = status.HTTP_404_NOT_FOUND)
         serializer = PlantSerializer(plant)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -61,7 +61,15 @@ class PlantView(ViewSet):
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = HelpLifeUser
+        fields = ("username", )
+
+
 class PlantSerializer(serializers.ModelSerializer):
+
+    user = UserSerializer(many=False)
 
     class Meta:
         model = Plant

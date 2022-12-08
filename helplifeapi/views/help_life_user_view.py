@@ -46,7 +46,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ("username", "is_staff", "date_joined", "email", "is_active")
+        fields = ("username", "is_staff", "date_joined", "email", "is_active", )
         
 
 class HelpLifeUserSerializer(serializers.ModelSerializer):
@@ -55,4 +55,4 @@ class HelpLifeUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = HelpLifeUser
         fields = ('id', 'user', "full_name", 'bio', 'profile_image_url', "tokenNumber", )
-        depth = 1
+        
