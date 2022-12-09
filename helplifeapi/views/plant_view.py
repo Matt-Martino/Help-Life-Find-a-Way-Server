@@ -2,9 +2,8 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from helplifeapi.models import Plant, HelpLifeUser
+from helplifeapi.models import Plant, HelpLifeUser, CareTip, PlantType
 from django.contrib.auth.models import User
-from rest_framework.authtoken.models import Token
 
 class PlantView(ViewSet):
     """plant view"""
@@ -65,10 +64,26 @@ class HelpUserSerializer(serializers.ModelSerializer):
         model = HelpLifeUser
         fields = ("username", )
 
+class CareTipSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CareTip
+        fields = (
+            "plant_tip_label",
+            "description_of_tip", 
+        )
+
+class PlantTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PlantType
+        fields = (
+            "plant_type", 
+        )
 
 class PlantSerializer(serializers.ModelSerializer):
 
     user = HelpUserSerializer(many=False)
+    care_tips = CareTipSerializer(many=True)
+    plant_types = PlantTypeSerializer(many=True)
 
     class Meta:
         model = Plant
@@ -78,5 +93,7 @@ class PlantSerializer(serializers.ModelSerializer):
                 'new_plant_care', 
                 'plant_age', 
                 'plant_name', 
-                'plant_image', )
+                'plant_image', 
+                'care_tips',
+                'plant_types', )
 
