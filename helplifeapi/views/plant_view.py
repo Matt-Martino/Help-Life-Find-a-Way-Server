@@ -18,24 +18,23 @@ class PlantView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list(self, request):
-
         filtered_plants = Plant.objects.all()
         
-        if "user" in request.query_params:
-            query_value = request.query_params["user"]
-            token = Token.objects.get(key=query_value)
-            user_id = token.user_id
-            filtered_plants = filtered_plants.filter(user=user_id)
+        if "myPlants" in request.query_params:
+            help_user = HelpLifeUser.objects.get(user=request.auth.user)
+            filtered_plants = Plant.objects.filter(user=help_user)
 
-        serializer = PlantSerializer(filtered_plants, many=True)
+        serializer = PlantSerializer(filtered_plants, many=True) 
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+       
 
     def create(self, request):
 
-        user = HelpLifeUser.objects.get(user=request.auth.user)
+        helpLifeUser = HelpLifeUser.objects.get(user=request.auth.user)
 
         plant = Plant.objects.create(
-            user = user,
+            user = helpLifeUser,
             available = request.data["available"],
             new_plant_care = request.data["new_plant_care"],
             plant_age = request.data["plant_age"],
@@ -61,7 +60,7 @@ class PlantView(ViewSet):
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
-class UserSerializer(serializers.ModelSerializer):
+class HelpUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = HelpLifeUser
         fields = ("username", )
@@ -69,7 +68,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class PlantSerializer(serializers.ModelSerializer):
 
-    user = UserSerializer(many=False)
+    user = HelpUserSerializer(many=False)
 
     class Meta:
         model = Plant

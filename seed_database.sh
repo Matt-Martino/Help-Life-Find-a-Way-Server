@@ -5,7 +5,7 @@ python3 manage.py makemigrations helplifeapi
 python3 manage.py migrate helplifeapi
 python3 manage.py loaddata users
 python3 manage.py loaddata tokens
+python3 manage.py loaddata help_life_user
 python3 manage.py loaddata plant_type
 python3 manage.py loaddata care_tip
 python3 manage.py loaddata plant
-python3 manage.py loaddata help_life_user
