@@ -3,6 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from helplifeapi.models import PlantCareTip, Plant, CareTip
+from helplifeapi.models import Plant, CareTip
 
 class PlantCareTipView(ViewSet):
     """plant care tip view"""
@@ -18,6 +19,9 @@ class PlantCareTipView(ViewSet):
     def list(self, request):
 
         plant_care_tips = PlantCareTip.objects.all()
+        if "plant" in request.query_params:
+            query_value = request.query_params["plant"]
+            plant_care_tips =plant_care_tips.filter(plant_id = query_value)
         serializer = PlantCareTipSerializer(plant_care_tips, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -45,8 +49,20 @@ class PlantCareTipView(ViewSet):
         plant.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+class PlantSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Plant
+        fields = ('id', 
+                'plant_name', )
+
+class CareTipSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CareTip
+        fields = ('id', 'plant_tip_label', 'description_of_tip', )
 
 class PlantCareTipSerializer(serializers.ModelSerializer):
+    care_tip = CareTipSerializer(many=False)
+    plant = PlantSerializer(many=False)
 
     class Meta:
         model = PlantCareTip
