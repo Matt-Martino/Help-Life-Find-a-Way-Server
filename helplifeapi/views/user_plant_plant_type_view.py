@@ -18,16 +18,21 @@ class UserPlantPlantTypeView(ViewSet):
 
     def list(self, request):
         user_plant_plant_types = UserPlantPlantType.objects.all()
+        if "plant" in request.query_params:
+            query_value = request.query_params["plant"]
+            user_plant_plant_types =user_plant_plant_types.filter(plant_id = query_value)
         serializer = UserPlantPlantTypeSerializer(user_plant_plant_types, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
-        Plant_type_id = PlantType.objects.get(pk=request.data["plant_type"])
+        plant_type_id = PlantType.objects.get(pk=request.data["plant_type"])
         plant_id = Plant.objects.get(pk=request.data["plant"])
 
+        if UserPlantPlantType.objects.filter( plant_type_id=request.data["plant_type"], plant_id=request.data["plant"] ).exists():
+            return Response("", status=status.HTTP_208_ALREADY_REPORTED)
 
         user_plant_plant_type = UserPlantPlantType.objects.create(
-            plant_type = Plant_type_id,
+            plant_type = plant_type_id,
             plant = plant_id
             )
 
@@ -50,7 +55,7 @@ class UserPlantPlantTypeView(ViewSet):
 class PlantTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = PlantType
-        fields = ('plant_type', )
+        fields = ('id', 'plant_type', )
 
 class PlantSerializer(serializers.ModelSerializer):
     class Meta:
