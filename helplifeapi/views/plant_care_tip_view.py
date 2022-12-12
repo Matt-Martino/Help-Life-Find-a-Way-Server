@@ -29,6 +29,9 @@ class PlantCareTipView(ViewSet):
         care_tip_id = CareTip.objects.get(pk=request.data["care_tip"])
         plant_id = Plant.objects.get(pk=request.data["plant"])
 
+        if PlantCareTip.objects.filter( care_tip_id=request.data["care_tip"], plant_id=request.data["plant"] ).exists():
+            return Response("", status=status.HTTP_208_ALREADY_REPORTED)
+            
         plant_care_tip = PlantCareTip.objects.create(
             care_tip = care_tip_id,
             plant = plant_id
