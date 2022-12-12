@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from rest_framework.decorators import action
-from helplifeapi.models import HelpLifeUser
+from helplifeapi.models import HelpLifeUser, Plant
 from django.contrib.auth.models import User
 
 class HelpLifeUserView(ViewSet):
@@ -16,8 +16,17 @@ class HelpLifeUserView(ViewSet):
 
 
     def list(self, request):
-        help_life_user = HelpLifeUser.objects.all()
-        serializer = HelpLifeUserSerializer(help_life_user, many=True)
+        help_life_users = HelpLifeUser.objects.all()
+        plants = Plant.objects.all()
+
+        plant_list = []
+        for plant in plants:
+            for help_life_user in help_life_users:
+                if plant.user.id == help_life_user.id:
+                    plant_list.append(plant)
+                    help_life_user.plant_count = len(plant_list)
+
+        serializer = HelpLifeUserSerializer(help_life_users, many=True)
         return Response(serializer.data)
 
 
@@ -53,5 +62,5 @@ class HelpLifeUserSerializer(serializers.ModelSerializer):
     user = UserSerializer(many=False)
     class Meta:
         model = HelpLifeUser
-        fields = ('id', 'user', "full_name", 'bio', 'profile_image_url', "tokenNumber", )
+        fields = ('id', 'user', "full_name", 'bio', 'profile_image_url', "tokenNumber", "plant_count", )
         
