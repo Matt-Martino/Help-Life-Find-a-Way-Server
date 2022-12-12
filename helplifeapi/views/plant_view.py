@@ -23,6 +23,10 @@ class PlantView(ViewSet):
             help_user = HelpLifeUser.objects.get(user=request.auth.user)
             filtered_plants = Plant.objects.filter(user=help_user)
 
+        if "user" in request.query_params:
+            query_value = request.query_params["user"]
+            help_user = HelpLifeUser.objects.get(user=query_value)
+            filtered_plants = Plant.objects.filter(user=help_user)
         serializer = PlantSerializer(filtered_plants, many=True) 
         return Response(serializer.data, status=status.HTTP_200_OK)
 

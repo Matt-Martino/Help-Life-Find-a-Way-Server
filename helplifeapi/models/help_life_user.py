@@ -24,3 +24,11 @@ class HelpLifeUser(models.Model):
     @property
     def email(self):
         return f'{self.user.email}'
+
+    @property
+    def plant_count(self):
+        return self.__plant_count
+
+    @plant_count.setter
+    def plant_count(self, value):
+        self.__plant_count = value
