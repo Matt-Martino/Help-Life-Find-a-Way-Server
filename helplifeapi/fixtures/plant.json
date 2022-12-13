@@ -8,7 +8,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957153/plant2_fofptf.png",
             "care_tips": [1,2,3],
             "plant_types": [2,3,4]
 
@@ -22,7 +22,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957137/plant1_reljr6.png",
             "care_tips": [4,5,6],
             "plant_types": [4,5,6]
         }
@@ -35,7 +35,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957158/plant3_di6fx9.png",
             "care_tips": [6,7,8],
             "plant_types": [6,7,8]
         }
@@ -48,7 +48,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957163/plant4_xyzpn1.png",
             "care_tips": [8,9,10],
             "plant_types": [8,9,10]
         }
@@ -61,7 +61,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957167/plant5_shkoqo.png",
             "care_tips": [10,3,6],
             "plant_types": [10,3,6]
         }
@@ -74,7 +74,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957172/plant6_xze2vf.png",
             "care_tips": [2,4,6,8,10],
             "plant_types": [2,4,6,8,10]
         }
@@ -87,7 +87,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957177/plant7_n62aqj.png",
             "care_tips": [1,3,5,7,9],
             "plant_types": [1,3,5,7,9]
         }
@@ -100,7 +100,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957181/plant8_a4nvq3.png",
             "care_tips": [1,10,5],
             "plant_types": [1,10,5]
         }
@@ -113,7 +113,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957185/plant9_xkv8zi.png",
             "care_tips": [3,6,9],
             "plant_types": [3,6,9]
         }
@@ -126,7 +126,7 @@
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
             "plant_name": "C. dasyii",
-            "plant_image": "daisy.img",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957189/plant10_nldk0f.png",
             "care_tips": [10,9,8,7,6,5,4,3,2,1],
             "plant_types": [10,9,8,7,6,5,4,3,2,1,11]
         }
