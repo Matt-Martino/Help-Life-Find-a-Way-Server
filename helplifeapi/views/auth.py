@@ -26,7 +26,8 @@ def login_user(request):
         token = Token.objects.get(user=authenticated_user)
         data = {
             'valid': True,
-            'token': token.key
+            'token': token.key,
+            'username': authenticated_user.username
         }
         return Response(data)
     else:
