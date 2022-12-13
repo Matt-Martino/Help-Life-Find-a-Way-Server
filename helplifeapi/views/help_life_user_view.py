@@ -19,10 +19,10 @@ class HelpLifeUserView(ViewSet):
         help_life_users = HelpLifeUser.objects.all()
         plants = Plant.objects.all()
 
-        plant_list = []
-        for plant in plants:
-            for help_life_user in help_life_users:
-                if plant.user.id == help_life_user.id:
+        for help_life_user in help_life_users:
+            plant_list = []
+            for plant in plants:
+                if plant.user.id == help_life_user.user.id:
                     plant_list.append(plant)
                     help_life_user.plant_count = len(plant_list)
 
