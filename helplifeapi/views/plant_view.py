@@ -71,7 +71,7 @@ class HelpUserSerializer(serializers.ModelSerializer):
 class CareTipSerializer(serializers.ModelSerializer):
     class Meta:
         model = CareTip
-        fields = (
+        fields = ( "id",
             "plant_tip_label",
             "description_of_tip", 
         )
@@ -80,6 +80,7 @@ class PlantTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = PlantType
         fields = (
+            "id",
             "plant_type", 
         )
 
