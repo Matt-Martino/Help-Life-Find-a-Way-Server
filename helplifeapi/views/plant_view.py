@@ -22,13 +22,23 @@ class PlantView(ViewSet):
         if "myPlants" in request.query_params:
             help_user = HelpLifeUser.objects.get(user=request.auth.user)
             filtered_plants = Plant.objects.filter(user=help_user)
+        
+        if "available" in request.query_params:
+            available_plants_nonuser = []
+            help_user = HelpLifeUser.objects.get(user=request.auth.user)
+            filtered_plants = Plant.objects.filter(available=True)
+            for plant in filtered_plants:
+                if plant.user != help_user:
+                    available_plants_nonuser.append(plant)
+            serializer = PlantSerializer(available_plants_nonuser, many=True) 
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
         if "user" in request.query_params:
             query_value = request.query_params["user"]
             help_user = HelpLifeUser.objects.get(user=query_value)
             filtered_plants = Plant.objects.filter(user=help_user)
-        serializer = PlantSerializer(filtered_plants, many=True) 
-        return Response(serializer.data, status=status.HTTP_200_OK)
+            serializer = PlantSerializer(filtered_plants, many=True) 
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
        
 
@@ -49,11 +59,16 @@ class PlantView(ViewSet):
 
     def update(self, request, pk):
         plant = Plant.objects.get(pk=pk)
-        plant.available = request.data["available"]
-        plant.new_plant_care = request.data["new_plant_care"]
-        plant.plant_age = request.data["plant_age"]
-        plant.plant_name = request.data["plant_name"]
-        plant.plant_image = request.data["plant_image"]
+        
+        if "available" in request.query_params:
+            plant.available = False
+            plant.user = HelpLifeUser.objects.get(user=request.auth.user)
+        else:
+            plant.available = request.data["available"]
+            plant.new_plant_care = request.data["new_plant_care"]
+            plant.plant_age = request.data["plant_age"]
+            plant.plant_name = request.data["plant_name"]
+            plant.plant_image = request.data["plant_image"]
         plant.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
