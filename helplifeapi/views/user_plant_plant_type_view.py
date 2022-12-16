@@ -29,7 +29,7 @@ class UserPlantPlantTypeView(ViewSet):
         plant_id = Plant.objects.get(pk=request.data["plant"])
 
         if UserPlantPlantType.objects.filter( plant_type_id=request.data["plant_type"], plant_id=request.data["plant"] ).exists():
-            return Response("Data already exists", status=status.HTTP_208_ALREADY_REPORTED)
+            return Response("Data already exists", status=status.HTTP_409_CONFLICT)
 
         user_plant_plant_type = UserPlantPlantType.objects.create(
             plant_type = plant_type_id,
