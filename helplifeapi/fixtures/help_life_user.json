@@ -3,7 +3,7 @@
         "model": "helplifeapi.HelpLifeUser",
         "pk": 1,
         "fields": {
-            "bio": "I'm a bio 1",
+            "bio": "My name is Matt.  I used to work as a zookeeper and now I am a software engineer.  Both of these jobs have such overlapping skill sets!  One thing I really love is not killing off good plants.  I rather give them away than throw out perfectly good growable plants!  So I made this community to share my plants with others.  Please take in some of my plants!  ",
             "user": 1,
             "profile_image_url": "http://www.google.com"
         }
@@ -12,7 +12,7 @@
         "model": "helplifeapi.HelpLifeUser",
         "pk": 2,
         "fields": {
-            "bio": "I'm a bio 2",
+            "bio": "My name is Meg.  I am new to plants, but am eager to learn.",
             "user": 2,
             "profile_image_url": "http://www.google.com"
         }
@@ -21,7 +21,7 @@
         "model": "helplifeapi.HelpLifeUser",
         "pk": 3,
         "fields": {
-            "bio": "I'm a bio 3",
+            "bio": "I'm Jenna.  I have a bit of experience with flowering plants.  I want more fruiting plants.",
             "user": 3,
             "profile_image_url": "http://www.google.com"
         }
@@ -30,8 +30,26 @@
         "model": "helplifeapi.HelpLifeUser",
         "pk": 4,
         "fields": {
-            "bio": "I'm a bio 4",
+            "bio": "My name ios Bryon and I have been taking care of plants since I was 10.  Looking to share some of mine with you all.",
             "user": 4,
+            "profile_image_url": "http://www.google.com"
+        }
+    },
+    {
+        "model": "helplifeapi.HelpLifeUser",
+        "pk": 5,
+        "fields": {
+            "bio": "I'm a welder named Emily who likes plants.  I need more plants!",
+            "user": 5,
+            "profile_image_url": "http://www.google.com"
+        }
+    },
+    {
+        "model": "helplifeapi.HelpLifeUser",
+        "pk": 6,
+        "fields": {
+            "bio": "I'm Tyler, and new to plants.  I would like to learn more and grow more.",
+            "user": 6,
             "profile_image_url": "http://www.google.com"
         }
     }

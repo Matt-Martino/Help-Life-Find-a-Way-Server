@@ -26,9 +26,17 @@ class HelpLifeUser(models.Model):
         return f'{self.user.email}'
 
     @property
-    def plant_count(self):
-        return self.__plant_count
+    def total_plant_count(self):
+        return self.__total_plant_count
 
-    @plant_count.setter
-    def plant_count(self, value):
-        self.__plant_count = value
+    @total_plant_count.setter
+    def total_plant_count(self, value):
+        self.__total_plant_count = value
+
+    @property
+    def available_plant_count(self):
+        return self.__available_plant_count
+
+    @available_plant_count.setter
+    def available_plant_count(self, value):
+        self.__available_plant_count = value

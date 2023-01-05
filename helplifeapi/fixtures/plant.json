@@ -7,7 +7,7 @@
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Fruit n salad",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957153/plant2_fofptf.png",
             "care_tips": [1,2,3],
             "plant_types": [2,3,4]
@@ -17,11 +17,11 @@
         "model": "helplifeapi.plant",
         "pk": 2,
         "fields": {
-            "user_id": 2,
+            "user_id": 1,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Flower Power",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957137/plant1_reljr6.png",
             "care_tips": [4,5,6],
             "plant_types": [4,5,6]
@@ -30,11 +30,11 @@
         "model": "helplifeapi.plant",
         "pk": 3,
         "fields": {
-            "user_id": 2,
+            "user_id": 1,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Eric the wise",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957158/plant3_di6fx9.png",
             "care_tips": [6,7,8],
             "plant_types": [6,7,8]
@@ -43,11 +43,11 @@
         "model": "helplifeapi.plant",
         "pk": 4,
         "fields": {
-            "user_id": 3,
+            "user_id": 1,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Mama Joe",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957163/plant4_xyzpn1.png",
             "care_tips": [8,9,10],
             "plant_types": [8,9,10]
@@ -56,11 +56,11 @@
         "model": "helplifeapi.plant",
         "pk": 5,
         "fields": {
-            "user_id": 3,
+            "user_id": 1,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Puddy",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957167/plant5_shkoqo.png",
             "care_tips": [10,3,6],
             "plant_types": [10,3,6]
@@ -69,11 +69,11 @@
         "model": "helplifeapi.plant",
         "pk": 6,
         "fields": {
-            "user_id": 3,
+            "user_id": 1,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Muckluck",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957172/plant6_xze2vf.png",
             "care_tips": [2,4,6,8,10],
             "plant_types": [2,4,6,8,10]
@@ -82,11 +82,11 @@
         "model": "helplifeapi.plant",
         "pk": 7,
         "fields": {
-            "user_id": 4,
-            "available": false,
+            "user_id": 1,
+            "available": true,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Patina",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957177/plant7_n62aqj.png",
             "care_tips": [1,3,5,7,9],
             "plant_types": [1,3,5,7,9]
@@ -95,11 +95,11 @@
         "model": "helplifeapi.plant",
         "pk": 8,
         "fields": {
-            "user_id": 4,
+            "user_id": 1,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Big Barn Hollow",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957181/plant8_a4nvq3.png",
             "care_tips": [1,10,5],
             "plant_types": [1,10,5]
@@ -108,11 +108,11 @@
         "model": "helplifeapi.plant",
         "pk": 9,
         "fields": {
-            "user_id": 4,
-            "available": false,
+            "user_id": 1,
+            "available": true,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Downtown Joe",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957185/plant9_xkv8zi.png",
             "care_tips": [3,6,9],
             "plant_types": [3,6,9]
@@ -121,11 +121,273 @@
         "model": "helplifeapi.plant",
         "pk": 10,
         "fields": {
+            "user_id": 1,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Ferter",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957189/plant10_nldk0f.png",
+            "care_tips": [10,9,8,7,6,5,4,3,2,1],
+            "plant_types": [10,9,8,7,6,5,4,3,2,1,11]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 11,
+        "fields": {
+            "user_id": 6,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Billy Goat Jean",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957153/plant2_fofptf.png",
+            "care_tips": [1,2,3],
+            "plant_types": [2,3,4]
+
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 12,
+        "fields": {
+            "user_id": 5,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Carol",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957137/plant1_reljr6.png",
+            "care_tips": [4,5,6],
+            "plant_types": [4,5,6]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 13,
+        "fields": {
             "user_id": 4,
             "available": false,
             "new_plant_care": "Keep humid for early an transplant",
             "plant_age": "Seedling",
-            "plant_name": "C. dasyii",
+            "plant_name": "Lana",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957158/plant3_di6fx9.png",
+            "care_tips": [6,7,8],
+            "plant_types": [6,7,8]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 14,
+        "fields": {
+            "user_id": 3,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Plopo",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957163/plant4_xyzpn1.png",
+            "care_tips": [8,9,10],
+            "plant_types": [8,9,10]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 15,
+        "fields": {
+            "user_id": 3,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Bob",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957167/plant5_shkoqo.png",
+            "care_tips": [10,3,6],
+            "plant_types": [10,3,6]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 16,
+        "fields": {
+            "user_id": 3,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "C.dasyii",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957172/plant6_xze2vf.png",
+            "care_tips": [2,4,6,8,10],
+            "plant_types": [2,4,6,8,10]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 17,
+        "fields": {
+            "user_id": 4,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Cupcake",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957177/plant7_n62aqj.png",
+            "care_tips": [1,3,5,7,9],
+            "plant_types": [1,3,5,7,9]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 18,
+        "fields": {
+            "user_id": 4,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Tuna",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957181/plant8_a4nvq3.png",
+            "care_tips": [1,10,5],
+            "plant_types": [1,10,5]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 19,
+        "fields": {
+            "user_id": 2,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Daisy",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957185/plant9_xkv8zi.png",
+            "care_tips": [3,6,9],
+            "plant_types": [3,6,9]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 20,
+        "fields": {
+            "user_id": 2,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Mallory",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957189/plant10_nldk0f.png",
+            "care_tips": [10,9,8,7,6,5,4,3,2,1],
+            "plant_types": [10,9,8,7,6,5,4,3,2,1,11]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 21,
+        "fields": {
+            "user_id": 2,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Fruit n salad",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957153/plant2_fofptf.png",
+            "care_tips": [1,2,3],
+            "plant_types": [2,3,4]
+
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 22,
+        "fields": {
+            "user_id": 3,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Flower Power",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957137/plant1_reljr6.png",
+            "care_tips": [4,5,6],
+            "plant_types": [4,5,6]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 23,
+        "fields": {
+            "user_id": 4,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Eric the wise",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957158/plant3_di6fx9.png",
+            "care_tips": [6,7,8],
+            "plant_types": [6,7,8]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 24,
+        "fields": {
+            "user_id": 6,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Mama Joe",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957163/plant4_xyzpn1.png",
+            "care_tips": [8,9,10],
+            "plant_types": [8,9,10]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 25,
+        "fields": {
+            "user_id": 3,
+            "available": true,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Puddy",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957167/plant5_shkoqo.png",
+            "care_tips": [10,3,6],
+            "plant_types": [10,3,6]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 26,
+        "fields": {
+            "user_id": 4,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Muckluck",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957172/plant6_xze2vf.png",
+            "care_tips": [2,4,6,8,10],
+            "plant_types": [2,4,6,8,10]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 27,
+        "fields": {
+            "user_id": 5,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Patina",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957177/plant7_n62aqj.png",
+            "care_tips": [1,3,5,7,9],
+            "plant_types": [1,3,5,7,9]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 28,
+        "fields": {
+            "user_id": 6,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Big Barn Hollow",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957181/plant8_a4nvq3.png",
+            "care_tips": [1,10,5],
+            "plant_types": [1,10,5]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 29,
+        "fields": {
+            "user_id": 5,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Downtown Joe",
+            "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957185/plant9_xkv8zi.png",
+            "care_tips": [3,6,9],
+            "plant_types": [3,6,9]
+        }
+    },{
+        "model": "helplifeapi.plant",
+        "pk": 30,
+        "fields": {
+            "user_id": 6,
+            "available": false,
+            "new_plant_care": "Keep humid for early an transplant",
+            "plant_age": "Seedling",
+            "plant_name": "Ferter",
             "plant_image": "https://res.cloudinary.com/dm0vsswx2/image/upload/v1670957189/plant10_nldk0f.png",
             "care_tips": [10,9,8,7,6,5,4,3,2,1],
             "plant_types": [10,9,8,7,6,5,4,3,2,1,11]

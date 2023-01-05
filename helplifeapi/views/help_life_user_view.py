@@ -20,11 +20,16 @@ class HelpLifeUserView(ViewSet):
         plants = Plant.objects.all()
 
         for help_life_user in help_life_users:
-            plant_list = []
+            total_plant_list = []
+            available_plants = []
             for plant in plants:
                 if plant.user.id == help_life_user.user.id:
-                    plant_list.append(plant)
-                    help_life_user.plant_count = len(plant_list)
+                    total_plant_list.append(plant)
+                    help_life_user.total_plant_count = len(total_plant_list)
+            
+                    if plant.available == True:
+                        available_plants.append(plant)
+                        help_life_user.available_plant_count = len(available_plants)
 
         serializer = HelpLifeUserSerializer(help_life_users, many=True)
         return Response(serializer.data)
@@ -62,5 +67,5 @@ class HelpLifeUserSerializer(serializers.ModelSerializer):
     user = UserSerializer(many=False)
     class Meta:
         model = HelpLifeUser
-        fields = ('id', 'user', "full_name", 'bio', 'profile_image_url', "tokenNumber", "plant_count", )
+        fields = ('id', 'user', "full_name", 'bio', 'profile_image_url', "tokenNumber", "total_plant_count", "available_plant_count",  )
         
