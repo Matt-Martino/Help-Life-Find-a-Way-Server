@@ -25,7 +25,7 @@
         "pk": 4,
         "fields": {
             "plant_tip_label": "Swampy soil",
-            "description_of_tip": "This plant likes it's soil wet."
+            "description_of_tip": "This plant likes it's soil to be wet."
         }
     },{
         "model": "helplifeapi.CareTip",
@@ -39,35 +39,35 @@
         "pk": 6,
         "fields": {
             "plant_tip_label": "Sandy Soil",
-            "description_of_tip": "This plant likes t's soil sandy."
+            "description_of_tip": "This plant likes it's soil sandy in composition."
         }
     },{
         "model": "helplifeapi.CareTip",
         "pk": 7,
         "fields": {
             "plant_tip_label": "Tight Roots",
-            "description_of_tip": "This plant likes it's roots bound in a small pot."
+            "description_of_tip": "This plant likes it's roots to be contained and fill up a smaller pot.."
         }
     },{
         "model": "helplifeapi.CareTip",
         "pk": 8,
         "fields": {
             "plant_tip_label": "Roots spread",
-            "description_of_tip": "This plant likes it's roots to spread."
+            "description_of_tip": "This plant likes it's roots to spread, so give it plenty of space."
         }
     },{
         "model": "helplifeapi.CareTip",
         "pk": 9,
         "fields": {
             "plant_tip_label": "Monthly fertilization",
-            "description_of_tip": "This plant likes to be fed nutrients monthly."
+            "description_of_tip": "This plant likes to be fed nutrients monthly.  It's hungry!"
         }
     },{
         "model": "helplifeapi.CareTip",
         "pk": 10,
         "fields": {
             "plant_tip_label": "Bi yearly fertilization",
-            "description_of_tip": "This plant likes to be fed bi annually."
+            "description_of_tip": "This plant likes to be fed bi annually. Not so hungry of a plant."
         }
     }
 ]
