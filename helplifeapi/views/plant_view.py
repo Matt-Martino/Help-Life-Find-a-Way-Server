@@ -17,7 +17,7 @@ class PlantView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list(self, request):
-        filtered_plants = Plant.objects.all()
+        filtered_plants = Plant.objects.all().order_by('?')
         
         if "myPlants" in request.query_params:
             help_user = HelpLifeUser.objects.get(user=request.auth.user)
