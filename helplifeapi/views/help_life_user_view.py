@@ -12,7 +12,7 @@ class HelpLifeUserView(ViewSet):
 
         help_life_user = HelpLifeUser.objects.get(pk=pk)
         serializer = HelpLifeUserSerializer(help_life_user)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
     def list(self, request):
@@ -23,7 +23,7 @@ class HelpLifeUserView(ViewSet):
             
             help_user = HelpLifeUser.objects.get(user=request.auth.user)
             serializer = HelpLifeUserSerializer(help_user)
-            return Response(serializer.data)
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
         for help_life_user in help_life_users:
             total_plant_list = []
@@ -47,8 +47,6 @@ class HelpLifeUserView(ViewSet):
         user = User.objects.get(pk=help_life_user.user_id)
         help_life_user.bio = request.data["bio"]
         help_life_user.profile_image_url = request.data["profile_image_url"]
-        # user.is_staff = request.data["is_staff"]
-        # user.is_active = request.data["is_active"]
         user.save()
         help_life_user.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
