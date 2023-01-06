@@ -9,8 +9,10 @@ from django.contrib.auth.models import User
 class HelpLifeUserView(ViewSet):
 
     def retrieve(self, request, pk):
-
-        help_life_user = HelpLifeUser.objects.get(pk=pk)
+        try: 
+            help_life_user = HelpLifeUser.objects.get(pk=pk)
+        except HelpLifeUser.DoesNotExist:
+            return Response({"message": "Help Life User does not exist"}, status = status.HTTP_404_NOT_FOUND)        
         serializer = HelpLifeUserSerializer(help_life_user)
         return Response(serializer.data, status=status.HTTP_200_OK)
 

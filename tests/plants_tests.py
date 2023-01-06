@@ -30,11 +30,9 @@ class PlantTests(APITestCase):
         }
 
         response = self.client.post(url, data, format='json')
-
         json_response = json.loads(response.content)
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-
         self.assertEqual(json_response["available"], False)
         self.assertEqual(json_response["new_plant_care"], "Water, light, love, n'dirt = needs.")
         self.assertEqual(json_response["plant_age"], "Seedling")
