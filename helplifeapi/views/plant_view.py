@@ -84,7 +84,7 @@ class PlantView(ViewSet):
 class HelpUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = HelpLifeUser
-        fields = ("username", "profile_image_url")
+        fields = ("username", "profile_image_url", "id")
 
 class CareTipSerializer(serializers.ModelSerializer):
     class Meta:
