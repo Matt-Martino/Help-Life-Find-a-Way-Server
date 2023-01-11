@@ -3,10 +3,9 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from helplifeapi.models import PlantCareTip, Plant, CareTip
-from helplifeapi.models import Plant, CareTip
 
 class PlantCareTipView(ViewSet):
-    """plant care tip view"""
+    """plant care tip view. The join table between plants and care tips."""
 
     def retrieve(self, request, pk):
         try: 
