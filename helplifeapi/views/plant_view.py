@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from helplifeapi.models import Plant, HelpLifeUser, CareTip, PlantType
-from django.contrib.auth.models import User
+
 
 class PlantView(ViewSet):
     """plant view"""

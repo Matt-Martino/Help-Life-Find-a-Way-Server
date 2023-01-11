@@ -6,7 +6,7 @@ from helplifeapi.models import UserPlantPlantType, PlantType, Plant
 
 
 class UserPlantPlantTypeView(ViewSet):
-    """User plant plant type view"""
+    """User plant plant type view.  The join table between plants and plants"""
 
     def retrieve(self, request, pk):
         try: 
